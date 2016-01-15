@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jk.googleadapter.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    android:id="@+id/listview"
+    android:background="#e2e2e2"
+    android:clipToPadding="false"
+    android:fadingEdge="horizontal"
+    android:dividerHeight="16dp"
+    android:padding="16dp"
+    android:scrollbarStyle="outsideOverlay"/>
+<!--outsideOverlay让滚动条在外面-->
+<!--clipToPadding网上滑动时不粘住顶部-->

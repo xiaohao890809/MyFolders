@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#fafafa"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/home_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tabbar_home"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/home_layout"
+                android:layout_alignTop="@id/home_layout"
+                android:src="@mipmap/new_dot"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/message_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tabbar_message"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:gravity="center"
+                    android:text="消息"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/message_layout"
+                android:layout_alignTop="@id/message_layout"
+                android:src="@mipmap/new_dot"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/fl_post"
+                android:layout_width="44dp"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rect_orign">
+
+                <ImageView
+                    android:id="@+id/more_fiction"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/tabbar_compose_icon_add"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/discover_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tabbar_discover"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:gravity="center"
+                    android:text="发现"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/discover_layout"
+                android:layout_alignTop="@id/discover_layout"
+                android:src="@mipmap/new_dot"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tabbar_profile"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:gravity="center"
+                    android:text="我"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/profile_layout"
+                android:layout_alignTop="@id/profile_layout"
+                android:src="@mipmap/new_dot"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
